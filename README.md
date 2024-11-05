@@ -1,11 +1,7 @@
 # vehicle_cli
 A command line interface Javascript app.
 
-
-
-https://github.com/user-attachments/assets/de32a55c-216a-497d-8acd-5097628a673a
-
-
+![vehicle_cli_demonstration](https://github.com/user-attachments/assets/5f30a680-77ea-4199-82f9-c8ec175684cb)
 
 ## Install
 Just copy the repository
