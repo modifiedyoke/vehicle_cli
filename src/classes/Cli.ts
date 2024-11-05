@@ -282,10 +282,10 @@ class Cli {
         },
       ])
       .then((answers) => {
-        if (answers.vehicle === truck) {
+        if (answers.vehicleToTow === truck) {
           console.log("You can't tow yourself!");
         } else {
-          truck.tow(answers.vehicle);
+          truck.tow(answers.vehicleToTow);
         }
         this.startCli();
       });
@@ -382,6 +382,8 @@ class Cli {
                 // @ts-expect-error: we know this will be a truck as an argument from the previous conditional
                 this.findVehicleToTow(this.vehicles[i]);
                 return;
+              } else {
+                console.log('This vehicle is unable to tow.');
               }
             }
           }
@@ -391,6 +393,8 @@ class Cli {
               if (this.vehicles[i] instanceof Motorbike) {
                 // @ts-expect-error: We know this is a motorbike with the wheelie function
                 this.vehicles[i].wheelie();
+              } else {
+                console.log('This vehicle is unable to do a wheelie.')
               }
             }
           }
